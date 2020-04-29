@@ -24,12 +24,11 @@ class Car
   end
 
   def self.classifications
-    Car.all.collect { |car| car.classification}
+    Car.all.collect { |car| car.classification}.uniq
   end
 
   def self.find_mechanics(client_car)
-
-    Car.all.collect{ |car| car.mechanic.specialization == client_car.classification ? car.mechanic : nil}
+    Mechanic.all.select{ |mechanic| mechanic.specialization == client_car.classification ? mechanic : nil}.compact
   end
 
 end

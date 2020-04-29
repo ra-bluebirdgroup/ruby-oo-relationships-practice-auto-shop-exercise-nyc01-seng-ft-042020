@@ -12,21 +12,21 @@ Here's what we need to be able to do.
 
 **CarOwner**
 
-  - `CarOwner.all` Get a list of all owners
+  x- `CarOwner.all` Get a list of all owners
 
-  - `CarOwner#cars` Get a list of all the cars that a specific owner has
+  x- `CarOwner#cars` Get a list of all the cars that a specific owner has
 
-  - `CarOwner#mechanics` Get a list of all the mechanics that a specific owner goes to
+x  - `CarOwner#mechanics` Get a list of all the mechanics that a specific owner goes to
 
-  - `CarOwner.average_number_of_cars` Get the average amount of cars owned for all owners
+x  - `CarOwner.average_number_of_cars` Get the average amount of cars owned for all owners
 
 **Car**
 
-  - `Car.all` Get a list of all cars
+  x - `Car.all` Get a list of all cars
 
-  - `Car.classifications` Get a list of all car classifications
+  x- `Car.classifications` Get a list of all car classifications
 
-  - `Car.find_mechanics(classification)` Get a list of mechanics that have an expertise that matches the passed in car classification
+  x- `Car.find_mechanics(classification)` Get a list of mechanics that have an expertise that matches the passed in car classification
 
 **Mechanic**
 
